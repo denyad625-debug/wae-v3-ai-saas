@@ -1,3 +1,0 @@
-module.exports=[99537,a=>{"use strict";var b=a.i(17048);a.s(["default",0,function({colors:a}){let c=a?.primary??"#6366f1",d=a?.secondary??"#a855f7",e=a?.accent??"#22d3ee";return(0,b.jsx)("div",{className:"h-full w-full",style:{background:"radial-gradient(1200px 700px at 20% 10%, "+c+" 0%, transparent 60%),radial-gradient(1000px 600px at 85% 90%, "+e+" 0%, transparent 55%),linear-gradient(135deg, "+c+" 0%, "+d+" 100%)"}})}])}];
-
-//# sourceMappingURL=11ec_01-ai-saas_src_components_visual_css-gradient-provider_tsx_156_z5k._.js.map
