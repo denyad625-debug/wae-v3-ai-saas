@@ -20,14 +20,14 @@
   "hadCompositionEvidence": true,
   "compositionId": "split-feature-comparison",
   "github": {
-    "url": null,
-    "pushed": false,
-    "sha": null
+    "url": "https://github.com/denyad625-debug/wae-v3-ai-saas",
+    "pushed": true,
+    "sha": "bc442f126ca7578060c85310af91f8c7e5eb7111"
   },
   "vercel": {
-    "state": "NOT_DEPLOYED",
-    "url": null,
-    "httpStatus": null
+    "state": "READY",
+    "url": "wae-v3-ai-saas.vercel.app",
+    "httpStatus": 200
   },
   "failed": false,
   "error": null,
