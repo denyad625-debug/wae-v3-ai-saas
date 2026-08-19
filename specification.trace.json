@@ -1,0 +1,74 @@
+{
+  "decisions": [
+    {
+      "layer": "input",
+      "decision": "normalize input",
+      "target": "prompt",
+      "reason": "Source \"prompt\" normalized to CanonicalInput.",
+      "confidence": 1
+    },
+    {
+      "layer": "analysis",
+      "decision": "classify document",
+      "target": "documentType:landing-page",
+      "reason": "classified from document evidence; dominantLang=en",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "layer": "analysis",
+      "decision": "extract entities",
+      "target": "role=\"\" company=\"intelligent document automation\"",
+      "reason": "extracted 0 skill(s), 1 location(s), 2 company(ies), 0 employment type(s)",
+      "confidence": 0.7
+    },
+    {
+      "layer": "analysis",
+      "decision": "interpret intent",
+      "target": "goal=\"drive product signups and conversions; promote an AI platform\"",
+      "reason": "audience=\"\" tone=\"modern\"",
+      "confidence": 0.7
+    },
+    {
+      "layer": "analysis",
+      "decision": "analyze request",
+      "target": "drive product signups and conversions; promote an AI platform",
+      "reason": "Structured understanding derived from CanonicalInput.",
+      "confidence": 1
+    },
+    {
+      "layer": "brand",
+      "decision": "derive brand",
+      "target": "modern",
+      "reason": "Brand identity derived from analysis.",
+      "confidence": 0.67
+    },
+    {
+      "layer": "knowledge",
+      "decision": "merge external facts",
+      "target": "brand,story,contacts,social,offices,products,pricing,testimonials,statistics,faq,team",
+      "reason": "Verified external BusinessFacts merged at the Knowledge input edge (L1).",
+      "confidence": 1
+    },
+    {
+      "layer": "knowledge",
+      "decision": "enrich with knowledge",
+      "target": "startup/ai-saas",
+      "reason": "Knowledge Engine consulted for startup/ai-saas.",
+      "confidence": 1
+    },
+    {
+      "layer": "planning",
+      "decision": "plan structure",
+      "target": "3 page(s)",
+      "reason": "Structure planned from enriched analysis.",
+      "confidence": 1
+    },
+    {
+      "layer": "content",
+      "decision": "generate content",
+      "target": "17 section(s)",
+      "reason": "Content generated for every section slot from BusinessFacts and analysis.",
+      "confidence": 1
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+schemaVersion: 1.0.0
+project:
+  name: Nimbus
+  version: 1.0.0
+  description: Nimbus is an AI SaaS platform that extracts, summarizes and routes unstructured documents into your existing workflows.
+engine:
+  type: startup
+  subType: ai-saas
+theme:
+  themeFamily: premium-saas
+  themeVariant: dashboard-led
+  portfolioMode: hidden
+  custom:
+    id: brand
+    name: Brand
+    colors:
+      primary: "#4f46e5"
+      secondary: "#6366f1"
+      accent: "#818cf8"
+      background: "#ffffff"
+      surface: "#f8fafc"
+      text: "#0f172a"
+      text-secondary: "#475569"
+    typography:
+      headingFont: Inter
+      bodyFont: Inter
+      baseSize: 16px
+      scale: 1.25
+    borderRadius: 0.5rem
+    spacing: 1rem
+    gradient:
+      primary: "linear-gradient(135deg, #4f46e5 0%, #6366f1 55%, #a5b4fc 130%)"
+      soft: "linear-gradient(180deg, #4f46e50d 0%, #f8fafc 100%)"
+      text: "linear-gradient(90deg, #4f46e5, #a5b4fc)"
+siteMode: company-led
+jobOfferSignals:
+  offerRichness: sparse
+  responsibilitiesRichness: low
+  requirementsRichness: low
+  benefitsPresence: none
+  technologyDensity: low
+  growthOrientation: false
+  learningOrientation: false
+  engineeringOrientation: false
+  designOrientation: false
+  teamOrientation: false
+  hiringProcessPresence: false
+  recruiterPresence: false
+  jobLedCandidate: false
+jobInformationArchitecture:
+  siteMode: company-led
+  iaPattern: company-led
+  primaryEmphasis:
+    - role
+  secondaryEmphasis:
+    - overview
+    - requirements
+    - skills
+    - application
+  jobPagePath: ""
+  companyPagesSecondary: false
+  dedicatedJobPage: false
+visualCapabilities:
+  -
+    capability: procedural-background
+    rationale: "project subscribes design pattern \"minimal\" (Minimal) → abstract capability procedural-background"
+    inputs:
+      colors:
+        primary: "#4f46e5"
+        secondary: "#6366f1"
+        accent: "#818cf8"
+        background: "#ffffff"
+  -
+    capability: image-preview
+    rationale: "project subscribes design pattern \"minimal\" (Minimal) → abstract capability image-preview"
+    inputs:
+      colors:
+        primary: "#4f46e5"
+        secondary: "#6366f1"
+        accent: "#818cf8"
+        background: "#ffffff"
+  -
+    capability: shader-background
+    rationale: "project subscribes design pattern \"editorial\" (Editorial) → abstract capability shader-background"
+    inputs:
+      colors:
+        primary: "#4f46e5"
+        secondary: "#6366f1"
+        accent: "#818cf8"
+        background: "#ffffff"
+    spec:
+      visualMood: technical
+      motionLevel: static
+      depthLevel: flat
+      colorStrategy: brand-palette
+      density: high
+      intensity: subtle
+      cameraStyle: fixed
+      surfaceType: plane
+      grain: off
+      interaction: none
+      performanceBudget: medium
+visualGrammar:
+  hero:
+    composition: split
+    mediaPosition: right
+    typography: balanced
+  layout:
+    grid: dense-grid
+    rhythm: uniform
+    contentWidth: container
+  navigation:
+    style: transparent
+    cta: true
+    sticky: true
+  surface:
+    treatment: light-clean
+    gradient: false
+  media:
+    style: product-focused
+    aspect: 16:10
+    prominence: high
+  density:
+    level: rich
+    columns: 4
+  spacing:
+    density: compact
+    base: 1rem
+    sectionScale: 0.9
+  typography:
+    character: technical
+    hierarchy: moderate
+    scale: 1.2
+  cta:
+    composition: single-primary
+    tone: direct
+  motion:
+    intensity: subtle
+    animations:
+      - fade-up
+  componentStyle:
+    card: bordered-card
+    radius: medium
+    shadow: crisp
+  footer:
+    composition: multi-column
+    social: true
+  mobile:
+    navigation: stack
+    singleColumn: true
+    touchTargets: relaxed
+visualComposition:
+  focalMode: split-right
+  heroComposition: split
+  backgroundMode: light-clean
+  mediaPlacement: right
+  depth: elevated
+  motion: subtle
+  interaction: none
+  surfaceTreatment: light-clean
+  sectionTransition: fade
+  density: rich
+  visualAnchor: headline
+  navigation:
+    style: transparent
+    cta: true
+    sticky: true
+  cta:
+    composition: single-primary
+    tone: direct
+  typography:
+    character: technical
+    hierarchy: moderate
+    scale: 1.2
+  media:
+    style: product-focused
+    aspect: 16:10
+    prominence: high
+renderGrammar:
+  surface: light-clean
+  depth: elevated
+  shadowTier: crisp
+  cardTier: bordered-card
+  borderTreatment: soft
+  radiusTreatment: medium
+  sectionTransition: stagger
+  focalMode: split-right
+  density: balanced
+  spacingProfile: compact
+  textAlignment: left
+  mediaPlacement: right
+  ctaLayout: single-primary
+  backgroundTreatment: light-clean
+  decorativeTreatment: none
+  heroLayout: product-showcase
+  sectionGeometry: grid
+  motion: subtle
+  responsiveTransform: compact-table
+  navigationPattern: product-inline
+iaPattern: company-led
+pages:
+  -
+    slug: home
+    name: Home
+    path: "/"
+    layout: marketing
+    sections:
+      -
+        componentId: visual-background
+        order: 0
+        props:
+          capabilities:
+            - procedural-background
+            - image-preview
+            - shader-background
+          title: Nimbus
+      -
+        componentId: navbar
+        order: 1
+        variant: transparent
+        props:
+          sticky: true
+          ctaButton: true
+          transparent: true
+          brand: Nimbus
+          links:
+            -
+              label: Features
+              href: "/features"
+            -
+              label: Contact
+              href: "/contact"
+          ctaText: Get Started
+      -
+        componentId: hero-centered
+        order: 2
+        variant: with-image-right
+        props:
+          textAlign: center
+          headline: Intelligent document automation for modern teams
+          subtitle: Nimbus is an AI SaaS platform that extracts, summarizes and routes unstructured documents into your existing workflows.
+          metrics:
+            -
+              value: 2.4M
+              label: Documents processed monthly
+            -
+              value: "99.2"
+              label: Average accuracy
+          ctaText: Get Started
+          ctaLink: "/contact"
+      -
+        componentId: pricing-table
+        order: 3
+        variant: 3-tier
+        props:
+          headline: Simple, Transparent Pricing
+          subtitle: Choose the plan that fits your needs.
+          pricing:
+            -
+              name: Starter
+              price: "$0"
+              description: For trying Nimbus with your own documents.
+              features:
+                - 200 pages / month
+                - Extract + Summarize
+                - Community support
+            -
+              name: Growth
+              price: "$99"
+              description: For teams that need reliable volume.
+              features:
+                - 10,000 pages / month
+                - All modules
+                - Priority support
+            -
+              name: Enterprise
+              price: Custom
+              description: For scale, security and control.
+              features:
+                - Unlimited pages
+                - SOC 2 + SSO/SAML
+                - Dedicated manager
+      -
+        componentId: feature-grid
+        order: 4
+        variant: 3-col
+        props:
+          columns: 4
+          headline: Key Features
+          subtitle: Built to help you move faster.
+          features:
+            -
+              title: Nimbus Extract
+              description: Turn PDFs, invoices and contracts into clean structured data.
+            -
+              title: Nimbus Summarize
+              description: Concise summaries of long documents, tuned to the questions your team asks.
+            -
+              title: Nimbus Route
+              description: Route each document to the right person or system without rules that break.
+      -
+        componentId: stats-bar
+        order: 5
+        variant: 3-stat
+        props:
+          headline: Our Impact
+          subtitle: Numbers that speak for themselves.
+          stats:
+            -
+              label: Documents processed monthly
+              value: 2.4M
+            -
+              label: Average accuracy
+              value: "99.2"
+            -
+              label: Hours saved per week
+              value: "18"
+      -
+        componentId: cta-banner
+        order: 6
+        variant: with-image
+        props:
+          background: gradient
+          headline: "Ready to drive product signups and conversions; promote an AI platform?"
+          ctaText: Get Started
+          ctaLink: "/contact"
+          testimonial:
+            quote: Nimbus cut our invoice processing time from hours to minutes. The accuracy is genuinely impressive.
+            author: Melisa Ortega
+            company: Lumen Retail
+          layout: split
+          stats:
+            -
+              value: 2.4M
+              label: Documents processed monthly
+            -
+              value: "99.2"
+              label: Average accuracy
+            -
+              value: "18"
+              label: Hours saved per week
+      -
+        componentId: footer-multi-column
+        order: 7
+        variant: 4-col
+        props:
+          description: Nimbus is an AI SaaS platform that extracts, summarizes and routes unstructured documents into your existing workflows.
+          links:
+            -
+              title: Pages
+              items:
+                -
+                  label: Features
+                  url: "/features"
+                -
+                  label: Contact
+                  url: "/contact"
+            -
+              title: Products
+              items:
+                -
+                  label: Nimbus Extract
+                -
+                  label: Nimbus Summarize
+                -
+                  label: Nimbus Route
+            -
+              title: Offices
+              items:
+                -
+                  label: San Francisco, USA
+                  url: "/contact"
+                -
+                  label: Lisbon, Portugal
+                  url: "/contact"
+            -
+              title: Contact
+              items:
+                -
+                  label: hello@nimbus.example
+                  url: mailto:hello@nimbus.example
+          social:
+            -
+              platform: linkedin
+              url: https://linkedin.com/company/nimbus
+          copyright: 2026 Nimbus
+    seo:
+      title: "Home | AI Platform"
+  -
+    slug: contact
+    name: Contact
+    path: "/contact"
+    layout: default
+    sections:
+      -
+        componentId: navbar
+        order: 0
+        variant: transparent
+        props:
+          sticky: true
+          ctaButton: true
+          transparent: true
+          brand: Nimbus
+          links:
+            -
+              label: Features
+              href: "/features"
+            -
+              label: Contact
+              href: "/contact"
+          ctaText: Get Started
+      -
+        componentId: page-header
+        order: 0
+        props:
+          title: Contact
+          align: center
+      -
+        componentId: contact-form
+        order: 2
+        variant: detailed
+        props:
+          headline: Get in Touch
+          subtitle: We would love to hear from you.
+          submitText: Send Message
+          email: hello@nimbus.example
+          address: San Francisco, CA, USA
+      -
+        componentId: footer-simple
+        order: 3
+        props:
+          description: Nimbus is an AI SaaS platform that extracts, summarizes and routes unstructured documents into your existing workflows.
+          links:
+            -
+              title: Pages
+              items:
+                -
+                  label: Features
+                  url: "/features"
+                -
+                  label: Contact
+                  url: "/contact"
+            -
+              title: Products
+              items:
+                -
+                  label: Nimbus Extract
+                -
+                  label: Nimbus Summarize
+                -
+                  label: Nimbus Route
+            -
+              title: Offices
+              items:
+                -
+                  label: San Francisco, USA
+                  url: "/contact"
+                -
+                  label: Lisbon, Portugal
+                  url: "/contact"
+            -
+              title: Contact
+              items:
+                -
+                  label: hello@nimbus.example
+                  url: mailto:hello@nimbus.example
+          social:
+            -
+              platform: linkedin
+              url: https://linkedin.com/company/nimbus
+          copyright: 2026 Nimbus
+    seo:
+      title: "contact | AI Platform"
+  -
+    slug: features
+    name: Features
+    path: "/features"
+    layout: default
+    sections:
+      -
+        componentId: navbar
+        order: 0
+        variant: transparent
+        props:
+          sticky: true
+          ctaButton: true
+          transparent: true
+          brand: Nimbus
+          links:
+            -
+              label: Features
+              href: "/features"
+            -
+              label: Contact
+              href: "/contact"
+          ctaText: Get Started
+      -
+        componentId: page-header
+        order: 0
+        props:
+          title: Features
+          align: center
+      -
+        componentId: content-grid
+        order: 2
+        variant: 3-col
+        props:
+          columns: 4
+          gap: small
+          headline: What We Offer
+          subtitle: Everything you need to succeed.
+          items:
+            -
+              title: Nimbus Extract
+              description: Turn PDFs, invoices and contracts into clean structured data.
+            -
+              title: Nimbus Summarize
+              description: Concise summaries of long documents, tuned to the questions your team asks.
+            -
+              title: Nimbus Route
+              description: Route each document to the right person or system without rules that break.
+      -
+        componentId: faq
+        order: 3
+        variant: accordion
+        props:
+          headline: Frequently Asked Questions
+          subtitle: Answers to common questions.
+          faqs:
+            -
+              question: How is my data kept secure?
+              answer: Nimbus is SOC 2 Type II compliant, encrypts data in transit and at rest, and never uses your documents to train models.
+            -
+              question: Can Nimbus connect to our existing stack?
+              answer: "Yes — REST APIs, webhooks and native integrations make it easy to route structured output into your tools."
+      -
+        componentId: footer-simple
+        order: 4
+        props:
+          description: Nimbus is an AI SaaS platform that extracts, summarizes and routes unstructured documents into your existing workflows.
+          links:
+            -
+              title: Pages
+              items:
+                -
+                  label: Features
+                  url: "/features"
+                -
+                  label: Contact
+                  url: "/contact"
+            -
+              title: Products
+              items:
+                -
+                  label: Nimbus Extract
+                -
+                  label: Nimbus Summarize
+                -
+                  label: Nimbus Route
+            -
+              title: Offices
+              items:
+                -
+                  label: San Francisco, USA
+                  url: "/contact"
+                -
+                  label: Lisbon, Portugal
+                  url: "/contact"
+            -
+              title: Contact
+              items:
+                -
+                  label: hello@nimbus.example
+                  url: mailto:hello@nimbus.example
+          social:
+            -
+              platform: linkedin
+              url: https://linkedin.com/company/nimbus
+          copyright: 2026 Nimbus
+    seo:
+      title: "features | AI Platform"
+components:
+  -
+    sectionType: hero
+    componentId: hero-centered
+  -
+    sectionType: content-grid
+    componentId: content-grid
+  -
+    sectionType: cta
+    componentId: cta-banner
+composition:
+  profile:
+    id: split-feature-comparison
+    hero: product-preview
+    sectionSequence: hero-feature-compare
+    sectionRhythm: dense-modular
+    mediaLead: product-led
+    contentForm: comparison
+    navigation: product
+    gridBehavior:
+      - grid-composition
+    responsive: density-adapt
+    typography: sans-ui
+  patterns:
+    - minimal
+    - editorial
+  rationale: "composition \"split-feature-comparison\" selected from evidence combination (mediaLead=product-led, contentForm=comparison, navigation=product); split-feature-comparison: comparison + product-led → existing minimal/editorial capability path (shader-background split hero)"
+  mediaIntent:
+    role: hero
+    placement: right
+    mediaType:
+      - image
+      - video
+      - shader
+      - css-capability
+      - none
+    subject: Nimbus SaaS platform that extracts summarizes routes unstructured
+    industry: AI software
+    specialization: artificial intelligence, data infrastructure and product interface
+    businessType: ai-saas
+    brandStyle: modern product UI with soft shadows, gradient accents and generous whitespace
+    themeFamily: premium-saas
+    themeVariant: dashboard-led
+    visualDensity: rich
+    composition: product-focused
+    motionStyle: subtle
+    colorMood: light
+    interaction: none
+    sourceKinds:
+      - local-semantic
+      - brand-asset
+      - stock-video
+      - stock-image
+      - ai-generated-video
+      - ai-generated-image
+      - css-capability
+      - none
+    queries:
+      - Nimbus SaaS platform that extracts summarizes routes unstructured, modern product UI with soft shadows, gradient accents and generous whitespace, product-focused, light
+      - Nimbus SaaS platform that extracts summarizes routes unstructured with subtle motion, atmospheric depth
+      - Nimbus SaaS platform that extracts summarizes routes unstructured
+    rationale: "MediaIntent derived deterministically from verified evidence; industry=AI software; variant=premium-saas/dashboard-led; role=hero; sources=businessFacts,brandFacts,jobFacts,themeVariant,visualGrammar,visualComposition,siteMode,pageRole"
+    evidence:
+      industry: AI software
+      specialization: artificial intelligence, data infrastructure and product interface
+      businessType: ai-saas
+      themeFamily: premium-saas
+      themeVariant: dashboard-led
+      siteMode: company-led
+      pageRole: home
+      brandUiStyle: modern product UI with soft shadows, gradient accents and generous whitespace
+      brandColors:
+        - "#4f46e5"
+        - "#6366f1"
+        - "#818cf8"
+        - "#ffffff"
+        - "#f8fafc"
+        - "#0f172a"
+      factsPresent:
+        - businessFacts
+        - brandFacts
+        - jobFacts
+        - themeVariant
+        - visualGrammar
+        - visualComposition
+        - siteMode
+        - pageRole
+  heroMediaIntent:
+    role: hero
+    kind: image
+    mediaType:
+      - image
+      - shader
+      - css-capability
+      - none
+    subject: Nimbus SaaS platform that extracts summarizes routes unstructured
+    mood: cinematic
+    style: modern product UI with soft shadows, gradient accents and generous whitespace
+    motion: subtle
+    composition: product-focused
+    aspectRatio: 16:9
+    placement: right
+    sourceKinds:
+      - local-semantic
+      - brand-asset
+      - stock-video
+      - stock-image
+      - ai-generated-video
+      - ai-generated-image
+      - css-capability
+      - none
+    fallbackChain:
+      - image
+      - shader
+      - css-capability
+      - none
+    queries:
+      - hero Nimbus SaaS platform that extracts summarizes routes unstructured, modern product UI with soft shadows, gradient accents and generous whitespace, product-focused, light
+      - hero Nimbus SaaS platform that extracts summarizes routes unstructured with subtle motion, atmospheric depth
+      - hero Nimbus SaaS platform that extracts summarizes routes unstructured
+      - cinematic hero background with depth and atmosphere
+    rationale: "HeroMediaIntent derived from businessFacts, brandFacts, jobFacts, themeVariant, visualGrammar, visualComposition, siteMode; primary kind=image (video-first=false); deterministic fallback image→shader→css-capability→none"
+    evidence:
+      industry: AI software
+      specialization: artificial intelligence, data infrastructure and product interface
+      businessType: ai-saas
+      themeFamily: premium-saas
+      themeVariant: dashboard-led
+      siteMode: company-led
+      brandUiStyle: modern product UI with soft shadows, gradient accents and generous whitespace
+      brandColors:
+        - "#4f46e5"
+        - "#6366f1"
+        - "#818cf8"
+        - "#ffffff"
+        - "#f8fafc"
+        - "#0f172a"
+      factsPresent:
+        - businessFacts
+        - brandFacts
+        - jobFacts
+        - themeVariant
+        - visualGrammar
+        - visualComposition
+        - siteMode

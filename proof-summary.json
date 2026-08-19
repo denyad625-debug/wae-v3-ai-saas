@@ -1,0 +1,167 @@
+{
+  "id": "01-ai-saas",
+  "category": "AI SaaS",
+  "brand": "Nimbus",
+  "evidenceCtx": "ai-saas",
+  "composition": {
+    "id": "split-feature-comparison",
+    "hero": "product-preview",
+    "sectionSequence": "hero-feature-compare",
+    "sectionRhythm": "dense-modular",
+    "mediaLead": "product-led",
+    "contentForm": "comparison",
+    "navigation": "product",
+    "responsive": "density-adapt",
+    "gridBehavior": [
+      "grid-composition"
+    ],
+    "typography": "sans-ui"
+  },
+  "hadCompositionEvidence": true,
+  "compositionId": "split-feature-comparison",
+  "github": {
+    "url": null,
+    "pushed": false,
+    "sha": null
+  },
+  "vercel": {
+    "state": "NOT_DEPLOYED",
+    "url": null,
+    "httpStatus": null
+  },
+  "failed": false,
+  "error": null,
+  "fileCount": 31,
+  "yamlHash": "a189ab261bda25c1a1b8c699af80b136d51c159c85261cbf976fefef619d7b9d",
+  "pages": [
+    "src/app/page.tsx",
+    "src/app/contact/page.tsx",
+    "src/app/features/page.tsx"
+  ],
+  "fingerprints": {
+    "routeGraph": "/>/contact>/features",
+    "routeList": [
+      "/",
+      "/contact",
+      "/features"
+    ],
+    "pageCount": 3,
+    "pageArchitecture": "/contact,/features|pages:3",
+    "homePageHash": "395b7fc8fc9f3148bd79deb0f48f65e525dae2b42d749fd3ee8251bfa0396cdb",
+    "homePageSections": [
+      "visualbackground",
+      "navbar",
+      "herocentered",
+      "pricingtable",
+      "featuregrid",
+      "statsbar",
+      "ctabanner",
+      "footermulticolumn"
+    ],
+    "layoutHash": "94c33106d536c014e4bd7cc0b18d945a3f23af1c82f8f2c139f338c05ed4d2fe",
+    "navigationPattern": "inline-default",
+    "responsiveMarkers": [
+      "responsive=\"compact-table\"",
+      "md-breakpoint"
+    ],
+    "mediaAssets": [
+      "src/app/icon.svg"
+    ],
+    "componentFiles": [
+      "src/components/contact-form.tsx",
+      "src/components/content-grid.tsx",
+      "src/components/cta-banner.tsx",
+      "src/components/faq.tsx",
+      "src/components/feature-grid.tsx",
+      "src/components/footer-multi-column.tsx",
+      "src/components/footer-simple.tsx",
+      "src/components/hero-centered.tsx",
+      "src/components/navbar.tsx",
+      "src/components/page-header.tsx",
+      "src/components/pricing-table.tsx",
+      "src/components/stats-bar.tsx",
+      "src/components/visual/css-gradient-provider.tsx",
+      "src/components/visual/image-provider.tsx",
+      "src/components/visual/shadergradient-provider.tsx",
+      "src/components/visual/webgl-gradient-provider.tsx",
+      "src/components/visual-background.tsx",
+      "src/components/visual-capability.tsx"
+    ],
+    "renderGrammarYaml": "surface: light-clean\n  depth: elevated\n  shadowTier: crisp\n  cardTier: bordered-card\n  borderTreatment: soft\n  radiusTreatment: medium\n  sectionTransition: stagger\n  focalMode: split-right\n  density: balanced\n  spacingProfile: compact\n  textAlignment: left\n  mediaPlacement: right\n  ctaLayout: single-primary\n  backgroundTreatment: light-clean\n  decorativeTreatment: none\n  heroLayout: product-showcase\n  sectionGeometry: grid\n  motion: subtle\n  responsiveTransform: compact-table\n  navigationPattern: product-inline",
+    "pageArchitectureYaml": null
+  },
+  "determinism": {
+    "pass": true,
+    "run1": "a189ab261bda25c1a1b8c699af80b136d51c159c85261cbf976fefef619d7b9d",
+    "run2": "a189ab261bda25c1a1b8c699af80b136d51c159c85261cbf976fefef619d7b9d",
+    "treeIdentical": true,
+    "fileCount1": 31,
+    "fileCount2": 31
+  },
+  "reproduction": {
+    "pass": null
+  },
+  "build": {
+    "install": true,
+    "build": true,
+    "routeLines": [
+      "Route (app)",
+      "┌ ○ /",
+      "├ ○ /_not-found",
+      "├ ○ /contact",
+      "├ ○ /features",
+      "└ ○ /icon.svg"
+    ],
+    "logTail": "tic pages using 7 workers (0/6) ...\n  Generating static pages using 7 workers (1/6) \r\n  Generating static pages using 7 workers (2/6) \r\n  Generating static pages using 7 workers (4/6) \r\n✓ Generating static pages using 7 workers (6/6) in 487ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ○ /contact\n├ ○ /features\n└ ○ /icon.svg\n\n\n○  (Static)  prerendered as static content\n\n"
+  },
+  "runtime": {
+    "ok": true,
+    "httpStatus": 200,
+    "consoleErrors": [],
+    "consoleErrorCount": 0,
+    "desktopOverflow": false,
+    "mobileOverflow": false,
+    "structure": {
+      "desktop": {
+        "sectionIds": [
+          "features",
+          "cta"
+        ],
+        "sectionCount": 5,
+        "h1": "Intelligent document automation for modern teams",
+        "headings": [
+          "Intelligent document automation for mode",
+          "Simple, Transparent Pricing",
+          "Key Features",
+          "Our Impact",
+          "Ready to drive product signups and conve"
+        ],
+        "navCount": 1,
+        "navText": "NimbusFeaturesContactGet Started",
+        "hasHero": false,
+        "mediaCount": 0,
+        "bodyOverflowX": false
+      },
+      "mobile": {
+        "sectionIds": [
+          "features",
+          "cta"
+        ],
+        "sectionCount": 5,
+        "h1": "Intelligent document automation for modern teams",
+        "headings": [
+          "Intelligent document automation for mode",
+          "Simple, Transparent Pricing",
+          "Key Features",
+          "Our Impact",
+          "Ready to drive product signups and conve"
+        ],
+        "navCount": 1,
+        "navText": "NimbusFeaturesContactGet Started",
+        "hasHero": false,
+        "mediaCount": 0,
+        "bodyOverflowX": false
+      }
+    }
+  }
+}
